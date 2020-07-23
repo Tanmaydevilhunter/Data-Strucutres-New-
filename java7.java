@@ -6,7 +6,7 @@ class BubbleSort
 { 
      public static void main(String args[])
    {
-      int i, num, item, array[];
+     int i, num, item, array[];
       Scanner input = new Scanner(System.in);
       num = input.nextInt(); 
       array = new int[num]; 
@@ -15,30 +15,13 @@ class BubbleSort
         array[i] = input.nextInt();
         }
       item = input.nextInt();
- 	 public static void main(String args[])
-   {
-      int i, num, item, array[];
-      Scanner input = new Scanner(System.in);
-      System.out.println("Enter size");
-      num = input.nextInt(); 
-      array = new int[num]; 
-      System.out.println("Enter " + num + " number");
-      for (i = 0; i < num; i++)
-        array[i] = input.nextInt();
-
-      System.out.println("Enter the search value:");
-      item = input.nextInt();
-
-      for (i = 0; i < num; i++)
-      {
-         if (array[i] == item) 
-         {
-           System.out.println(item);
-           break;
-         }
-      }
-      if (i == num)
-        System.out.println(item + " not");
-   }
+	  for (int i = 0; i < n-1; i++) 
+            for (int j = 0; j < n-i-1; j++) 
+                if (arr[j] > arr[j+1]) 
+                {  
+                    int temp = arr[j]; 
+                    arr[j] = arr[j+1]; 
+                    arr[j+1] = temp; 
+                } 
    }
 } 
